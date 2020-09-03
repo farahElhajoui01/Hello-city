@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title 'About Us | ' ~parent() %}
+ {% block body %}
+
+<img src="{{asset('/images/heart.webp')}}" alt="morocco flag" class="w-40 h-40 mt-10 rounded-full  my-12 shadow-md ">
+
+<h1 class=" text-2xl sm:text-4xl font-semibold text-indigo-600">Built with <span class="text-pink-500">&hearts;</span> by Farah EL HAJOUI</h1>
+       
+<a class="text-indigo-500 hover:text-indigo-600 underline"  href="{{path('app_home')}}">back to Home Page</a>
+
+        {% endblock %}
